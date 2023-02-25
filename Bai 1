@@ -1,59 +1,58 @@
-lớp  công khai bai1 {
-    // Tập tin bai1.java
+public class bai1 {
+    // File bai1.java
 
 // Định nghĩa gói "myPackage" chứa các lớp liên quan đến hình học
-gói  myPackage ;
+package myPackage;
 
 // Lớp HinhVuong biểu diễn hình vuông
-public  class  HinhVuong {
-    // Thuộc tính canh biểu tượng cạnh của hình vuông
-     canh đôi  riêng ;
+public class HinhVuong {
+    // Thuộc tính canh biểu diễn cạnh của hình vuông
+    private double canh;
 
-    // Phương thức khởi tạo với tham số cận
-    công  HinhVuong ( double  canh ) {
-        này . canh = canh ;
+    // Phương thức khởi tạo với tham số cạnh
+    public HinhVuong(double canh) {
+        this.canh = canh;
     }
 
     // Phương thức getter trả về giá trị của thuộc tính canh
-    công  đôi  getCanh () {
-        quay  canh ;
+    public double getCanh() {
+        return canh;
     }
 
-    // Phương thức thiết lập giá trị của thuộc tính canh
-    public  void  setCanh ( double  canh ) {
-        này . canh = canh ;
+    // Phương thức setter thiết lập giá trị của thuộc tính canh
+    public void setCanh(double canh) {
+        this.canh = canh;
     }
 
     // Phương thức tính diện tích của hình vuông
-    public  double  tinhDienTich () {
-        trả  canh * canh ;
-        
+    public double tinhDienTich() {
+        return canh * canh;
     }
 }
 
 // Lớp HinhTron biểu diễn hình tròn
-public  class  HinhTron {
+public class HinhTron {
     // Thuộc tính banKinh biểu diễn bán kính của hình tròn
-    riêng  đôi  banKinh ;
+    private double banKinh;
 
     // Phương thức khởi tạo với tham số bán kính
-    public  HinhTron ( double  banKinh ) {
-        này . banKinh = banKinh ;
+    public HinhTron(double banKinh) {
+        this.banKinh = banKinh;
     }
 
     // Phương thức getter trả về giá trị của thuộc tính banKinh
-    công  đôi  getBanKinh () {
-        trả lại  bảnkinh ;
+    public double getBanKinh() {
+        return banKinh;
     }
 
-    // Phương thức setter setting value of property banKinh
-    public  void  setBanKinh ( double  banKinh ) {
-        này . banKinh = banKinh ;
+    // Phương thức setter thiết lập giá trị của thuộc tính banKinh
+    public void setBanKinh(double banKinh) {
+        this.banKinh = banKinh;
     }
 
     // Phương thức tính diện tích của hình tròn
-    public  double  tinhDienTich () {
-        trả lại  Toán học . PI * banKinh * banKinh ;
+    public double tinhDienTich() {
+        return Math.PI * banKinh * banKinh;
     }
 }
 
