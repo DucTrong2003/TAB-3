@@ -1,52 +1,52 @@
- lớp  công khai bai2 {
-    công  bai2 () {
+  class bai2 {
+    public bai2() {
     }
 
-     lớp  công khai Vector {
-        nhân  đôi  x ;
-        nhân  đôi  y ;
-        z  ; _  _
+    public class Vector {
+        private double x;
+        private double y;
+        private double z;
     
         // Phương thức khởi tạo với 3 tham số
-         vectơ công cộng ( double  x , double  y , double  z ) {
-            này . x = x ;
-            này . y = y ;
-            này . z = z ;
+        public Vector(double x, double y, double z) {
+            this.x = x;
+            this.y = y;
+            this.z = z;
         }
     
         // Phương thức lấy giá trị x
-         getX kép  công khai () {
-            trả lại  x ;
+        public double getX() {
+            return x;
         }
     
         // Phương thức lấy giá trị y
-        công khai  gấp đôi  getY () {
-            trả lại  y ;
+        public double getY() {
+            return y;
         }
     
         // Phương thức lấy giá trị z
-        công khai  gấp đôi  getZ () {
-            quay lại  z ;
+        public double getZ() {
+            return z;
         }
     
-        // Phương thức cộng 2 véc tơ
-        public  Vector  cong ( Vector  v ) {
-            trả lại  Vector mới  ( x + v . getX (), y + v . getY (), z + v . getZ ());
+        // Phương thức cộng 2 vector
+        public Vector cong(Vector v) {
+            return new Vector(x + v.getX(), y + v.getY(), z + v.getZ());
         }
     
         // Phương thức trừ 2 vector
-        public  Vector  tru ( Vector  v ) {
-            trả về  Vector mới  ( x - v . getX (), y - v . getY (), z - v . getZ ());
+        public Vector tru(Vector v) {
+            return new Vector(x - v.getX(), y - v.getY(), z - v.getZ());
         }
     
         // Phương thức nhân vector với 1 hằng số
-        public  Vector  nhan ( double  k ) {
-            trả về  Vector mới  ( k * x , k * y , k * z );
+        public Vector nhan(double k) {
+            return new Vector(k * x, k * y, k * z);
         }
     
         // Phương thức nhân vô hướng 2 vector
-        công  đôi  nhanVH ( Vector  v ) {
-            trả lại  x * v . getX () + y * v . getY () + z * v . getZ ();
+        public double nhanVH(Vector v) {
+            return x * v.getX() + y * v.getY() + z * v.getZ();
         }
     }
     
