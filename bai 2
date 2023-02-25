@@ -1,0 +1,54 @@
+ lớp  công khai bai2 {
+    công  bai2 () {
+    }
+
+     lớp  công khai Vector {
+        nhân  đôi  x ;
+        nhân  đôi  y ;
+        z  ; _  _
+    
+        // Phương thức khởi tạo với 3 tham số
+         vectơ công cộng ( double  x , double  y , double  z ) {
+            này . x = x ;
+            này . y = y ;
+            này . z = z ;
+        }
+    
+        // Phương thức lấy giá trị x
+         getX kép  công khai () {
+            trả lại  x ;
+        }
+    
+        // Phương thức lấy giá trị y
+        công khai  gấp đôi  getY () {
+            trả lại  y ;
+        }
+    
+        // Phương thức lấy giá trị z
+        công khai  gấp đôi  getZ () {
+            quay lại  z ;
+        }
+    
+        // Phương thức cộng 2 véc tơ
+        public  Vector  cong ( Vector  v ) {
+            trả lại  Vector mới  ( x + v . getX (), y + v . getY (), z + v . getZ ());
+        }
+    
+        // Phương thức trừ 2 vector
+        public  Vector  tru ( Vector  v ) {
+            trả về  Vector mới  ( x - v . getX (), y - v . getY (), z - v . getZ ());
+        }
+    
+        // Phương thức nhân vector với 1 hằng số
+        public  Vector  nhan ( double  k ) {
+            trả về  Vector mới  ( k * x , k * y , k * z );
+        }
+    
+        // Phương thức nhân vô hướng 2 vector
+        công  đôi  nhanVH ( Vector  v ) {
+            trả lại  x * v . getX () + y * v . getY () + z * v . getZ ();
+        }
+    }
+    
+    
+}
